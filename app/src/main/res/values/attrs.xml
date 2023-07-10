@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RingTextView">
+        <attr name="RingOutColor" format="color" />
+        <attr name="RingInnerColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MineItemCustom">
+        <attr name="text" format="string" />
+        <attr name="desc" format="string" />
+        <attr name="bgselector">
+            <enum name="first" value="0" />
+            <enum name="middle" value="1" />
+            <enum name="last" value="2" />
+        </attr>
+        <attr name="iconLeft" format="reference|color" />
+    </declare-styleable>
+
+
+</resources>

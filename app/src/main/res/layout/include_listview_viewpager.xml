@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.neteasenews.ui.common.view.NestedScrollableHost
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_160">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/head_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_160" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/dots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_viewpager_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@id/dots"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </com.example.neteasenews.ui.common.view.NestedScrollableHost>
+
+
+</RelativeLayout>

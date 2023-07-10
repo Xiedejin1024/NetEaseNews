@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray50"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tabhost_select"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:drawableLeft="@mipmap/setting"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:text="设置"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:padding="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_3"
+                    android:paddingRight="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_3"
+                    android:text="登录"
+                    android:textColor="@color/tabhost_select"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/login"
+                    android:paddingTop="@dimen/dp_3"
+                    android:paddingRight="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_3"
+                    android:text="手机号快速注册登录>>"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:drawableLeft="@mipmap/sign_in"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:text="签到"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/wx"
+                        android:text="微信登录"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/white50" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/qq"
+                        android:text="QQ登录"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/white50" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/wb"
+                        android:text="微博登录"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_20" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:layout_below="@id/ll" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rl"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/item_mine_bg_nomal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/wx"
+                    android:text="我的关注"
+                    android:textColor="@color/tabhost"
+                    android:textSize="@dimen/sp_16" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_20"
+                android:background="@color/tabhost" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/qq"
+                    android:text="我的粉丝"
+                    android:textColor="@color/tabhost"
+                    android:textSize="@dimen/sp_16" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_mine_bg_nomal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/sc"
+                        android:text="收藏"
+                        android:textColor="@color/tabhost"
+                        android:textSize="@dimen/sp_16" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/tabhost" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/ls"
+                        android:text="历史"
+                        android:textColor="@color/tabhost"
+                        android:textSize="@dimen/sp_16" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/tabhost" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/gt"
+                        android:text="跟帖"
+                        android:textColor="@color/tabhost"
+                        android:textSize="@dimen/sp_16" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/tabhost" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/jb"
+                        android:text="金币"
+                        android:textColor="@color/tabhost"
+                        android:textSize="@dimen/sp_16" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.example.neteasenews.ui.mine.MineItemCustom
+                android:id="@+id/mic_mynews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                custom:bgselector="first"
+                custom:text="我的消息" />
+
+            <com.example.neteasenews.ui.mine.MineItemCustom
+                android:id="@+id/mic_dongtai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:bgselector="first"
+                custom:text="最近动态" />
+
+            <com.example.neteasenews.ui.mine.MineItemCustom
+                android:id="@+id/mic_jbsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                custom:bgselector="first"
+                custom:text="金币商场" />
+
+            <com.example.neteasenews.ui.mine.MineItemCustom
+                android:id="@+id/mic_jbrw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:bgselector="first"
+                custom:text="金币任务" />
+
+
+            <RelativeLayout
+                android:id="@+id/mic_yjms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40"
+                android:background="@drawable/selector_item_mine_frist"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10">
+
+
+                <TextView
+                    android:id="@+id/tv_item_main_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="夜间模式"
+                    android:textColor="@color/tabhost"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/tv_item_main_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/image_item_main_view"
+                    android:textColor="@color/tabhost"
+                    android:textSize="@dimen/sp_16" />
+
+                <ImageView
+                    android:id="@+id/image_item_main_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/into" />
+
+            </RelativeLayout>
+
+            <com.example.neteasenews.ui.mine.MineItemCustom
+                android:id="@+id/mic_yjfk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:bgselector="first"
+                custom:text="意见反馈" />
+
+            <com.example.neteasenews.ui.mine.MineItemCustom
+                android:id="@+id/mic_gyrj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:bgselector="first"
+                custom:text="关于软件" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

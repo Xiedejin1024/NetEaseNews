@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">网易新闻</string>
+    <string name="splash_text">点击跳转详情页或第三方应用</string>
+    <string name="homepage">首页</string>
+    <string name="video">视频</string>
+    <string name="community">社区</string>
+    <string name="mine">我的</string>
+
+
+    <string name="headline">头条</string>
+    <string name="sports">体育</string>
+    <string name="natives">电影</string>
+    <string name="yl">娱乐</string>
+    <string name="cj">财经</string>
+    <string name="kj">科技</string>
+    <string name="qc">汽车</string>
+    <string name="yx">游戏</string>
+    <string name="ss">时尚</string>
+    <string name="sm">数码</string>
+    <string name="jy">教育</string>
+    <string name="ly">旅游</string>
+
+    <array name="headTitle">
+        <item>头条</item>
+        <item>体育</item>
+        <item>电影</item>
+        <item>娱乐</item>
+        <item>财经</item>
+        <item>科技</item>
+        <item>汽车</item>
+        <item>游戏</item>
+        <item>时尚</item>
+        <item>数码</item>
+        <item>教育</item>
+        <item>旅游</item>
+
+
+    </array>
+
+
+</resources>
