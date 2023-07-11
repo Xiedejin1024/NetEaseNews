@@ -2,22 +2,22 @@ package com.example.neteasenews.ui
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
 import android.view.View
-import androidx.constraintlayout.widget.Group
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.neteasenews.R
 import com.example.neteasenews.databinding.ActivityMainBinding
-import com.example.neteasenews.event.MessageEvent
 import com.example.neteasenews.event.RefreshEvent
 import com.example.neteasenews.ui.common.ui.BaseActivity
 import com.example.neteasenews.ui.community.CommunityFragment
 import com.example.neteasenews.ui.home.HomeFragment
 import com.example.neteasenews.ui.mine.MineFragment
 import com.example.neteasenews.ui.video.VideoFragment
+import com.example.neteasenews.utils.showToast
 import org.greenrobot.eventbus.EventBus
+
 
 class MainActivity : BaseActivity() {
     companion object {
@@ -196,6 +196,7 @@ class MainActivity : BaseActivity() {
         binding.navigationBar.tvMine.isSelected = false
     }
 
+
     private fun hideFragments(transaction: FragmentTransaction) {
         transaction.run {
             if (homePageFragment != null) hide(homePageFragment!!)
@@ -208,5 +209,19 @@ class MainActivity : BaseActivity() {
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
+    }
+
+    private var exitTime: Long = 0
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            if (System.currentTimeMillis() - exitTime > 2000) {
+                "再按一次退出程序".showToast()
+                exitTime = System.currentTimeMillis()
+            } else {
+                finish()
+            }
+            return true
+        }
+        return super.onKeyDown(keyCode, event)
     }
 }

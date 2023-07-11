@@ -19,6 +19,28 @@ object SplashDao {
 
     }
 
+    fun saveHomeTitle(adsString: String) {
+        sharedPreferences().edit {
+            putString("home_title", adsString)
+        }
+    }
+
+    fun getHomeTitle(): String? {
+        return sharedPreferences().getString("home_title", "")
+
+    }
+
+    fun saveHideHomeTitle(adsString: String) {
+        sharedPreferences().edit {
+            putString("hide_home_title", adsString)
+        }
+    }
+
+    fun getHideHomeTitle(): String? {
+        return sharedPreferences().getString("hide_home_title", "")
+
+    }
+
 
     fun saveLastTime(lastTime: Long) {
         sharedPreferences().edit {

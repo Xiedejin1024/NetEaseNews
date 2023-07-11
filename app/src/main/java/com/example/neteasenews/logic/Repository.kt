@@ -80,4 +80,11 @@ object Repository {
         emit(result)
     }
 
+    fun saveHomeTitle(homeTitle: String) = SplashDao.saveHomeTitle(homeTitle)
+
+    fun getHomeTitle(): String? = SplashDao.getHomeTitle()
+    fun saveHideHomeTitle(hideTitle: String) = SplashDao.saveHideHomeTitle(hideTitle)
+
+    fun getHideHomeTitle(): String? = SplashDao.getHideHomeTitle()
+
 }

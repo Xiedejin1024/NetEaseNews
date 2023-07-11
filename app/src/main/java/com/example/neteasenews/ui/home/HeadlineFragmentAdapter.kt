@@ -26,8 +26,7 @@ class HeadlineFragmentAdapter : FragmentStatePagerAdapter {
         return mInfo[position].getName()
     }
 
-
-    fun getItemPosition(`object`: Objects): Int {
+    override fun getItemPosition(`object`: Any): Int {
         return POSITION_NONE
     }
 
